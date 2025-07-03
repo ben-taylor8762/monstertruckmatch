@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MonsterTruckMatchApp: App {
+    @State private var game = Game()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(game)
         }
     }
 }
